@@ -1,0 +1,50 @@
+.navbar {
+  height: 64px;
+  background: white;
+  border-bottom: 1px solid #eee;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navbar-logo {
+  height: 80px;
+  width: 80px;
+  animation: floating 6s ease-in-out infinite;
+  filter: drop-shadow(0 0 20px rgba(218, 165, 32, 0.4))
+         drop-shadow(0 0 40px rgba(255, 215, 0, 0.3))
+         drop-shadow(0 20px 40px rgba(0, 0, 0, 0.2));
+}
+
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0) rotateY(0);
+  }
+  50% {
+    transform: translateY(-5px) rotateY(10deg);
+  }
+}
+
+.navbar-logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.navbar h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111;
+  margin: 0;
+} 
