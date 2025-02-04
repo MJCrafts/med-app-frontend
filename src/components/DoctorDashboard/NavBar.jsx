@@ -1,15 +1,28 @@
 import React from 'react';
-import '../../styles/NavBar.css';
-import caduceus from '../../assets/caduceus.png';
+import { Link } from 'react-router-dom';
+import { FiBell } from 'react-icons/fi';
+import caduceusLogo from '../../assets/caduceus.png';
+import '../../styles/DoctorDashboard.css';
 
 const NavBar = () => {
   return (
-    <nav className="navbar">
-      <div className="navbar-left">
-        <img src={caduceus} alt="MediApp Logo" className="navbar-logo" />
-        <h1>Espace Médecin</h1>
+    <div className="navbar">
+      <div className="navbar-brand">
+        <Link to="/" className="navbar-logo">
+          <img src={caduceusLogo} alt="Logo" />
+        </Link>
+        <div className="brand-text">
+          <h1>Espace Médecin</h1>
+        </div>
       </div>
-    </nav>
+
+      <div className="navbar-actions">
+        <button className="notification-button">
+          <FiBell />
+          <span className="notification-badge">3</span>
+        </button>
+      </div>
+    </div>
   );
 };
 

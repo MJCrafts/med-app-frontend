@@ -10,6 +10,7 @@ import PatientAppointments from './components/PatientDashboard/PatientAppointmen
 import PatientProfile from './components/PatientDashboard/PatientProfile';
 import MedicalRecords from './components/PatientDashboard/MedicalRecords';
 import BookAppointment from './components/PatientDashboard/BookAppointment';
+import SearchDoctors from './components/SearchDoctors/SearchDoctors';
 import './App.css';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           {/* Patient Routes */}
           <Route path="/patient-dashboard" element={<PatientDashboard />} />
           <Route path="/book-appointment" element={<BookAppointment />} />
+          <Route path="/search-doctors" element={<SearchDoctors />} />
           <Route path="/patient-appointments" element={<PatientAppointments />} />
           <Route path="/patient-profile" element={<PatientProfile />} />
           <Route path="/medical-records" element={<MedicalRecords />} />

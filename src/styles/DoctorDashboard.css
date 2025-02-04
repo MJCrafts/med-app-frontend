@@ -16,6 +16,70 @@
   z-index: 1000;
 }
 
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navbar-logo {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-logo img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.brand-text h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.notification-button {
+  position: relative;
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  color: var(--text-medium);
+  transition: color 0.2s ease;
+}
+
+.notification-button:hover {
+  color: var(--text-dark);
+}
+
+.notification-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--primary-color);
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 6px;
+}
+
 /* Stats Grid */
 .stats-grid {
   display: grid;
@@ -312,8 +376,8 @@ td {
 }
 
 .navbar-logo {
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
   animation: floating 6s ease-in-out infinite;
   filter: drop-shadow(0 0 20px rgba(218, 165, 32, 0.4))
          drop-shadow(0 0 40px rgba(255, 215, 0, 0.3))
@@ -322,7 +386,8 @@ td {
 
 .navbar-logo img {
   height: 100%;
-  width: 100%;
+  width: auto;
+  max-width: 100%;
   object-fit: contain;
 }
 

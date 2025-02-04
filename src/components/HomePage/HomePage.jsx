@@ -19,8 +19,7 @@ const HomePage = () => {
 
   const handleSearch = (e) => {
     e.preventDefault();
-    // Implement search functionality
-    console.log('Search:', { searchQuery, specialty, city, location });
+    navigate('/search-doctors', { state: { searchQuery, specialty, city, location } });
   };
 
   const handleLocation = () => {
@@ -156,7 +155,7 @@ const HomePage = () => {
               </div>
               <h3>Réservez en tant que invité</h3>
               <p>Pas besoin de créer un compte</p>
-              <button className="choice-btn">
+              <button className="choice-btn" onClick={() => navigate('/search-doctors')}>
                 <BsCalendarCheck className="btn-icon" />
                 Réserver maintenant
               </button>

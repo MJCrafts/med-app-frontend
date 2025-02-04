@@ -23,11 +23,9 @@
   height: 80px;
   background: white;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 0 40px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-  z-index: 1000;
+  align-items: center;
+  padding: 1rem 2rem;
 }
 
 .navbar-brand {
@@ -319,6 +317,10 @@
   color: var(--primary-color);
 }
 
+.appointment-date .icon {
+  color: #000;
+}
+
 .appointment-details h3 {
   font-size: 16px;
   font-weight: 500;
@@ -541,7 +543,7 @@
 }
 
 .appointment-date .icon {
-  color: #ff6b00;
+  color: #000;
 }
 
 .appointment-body {
@@ -557,7 +559,7 @@
 }
 
 .doctor-info .icon {
-  color: #ff6b00;
+  color: #000;
   font-size: 24px;
 }
 
@@ -656,7 +658,7 @@
 }
 
 .meta-icon {
-  color: var(--primary-color);
+  color: #000;
 }
 
 .document-actions {
@@ -1137,7 +1139,7 @@
 }
 
 .meta-icon {
-  color: var(--primary-color);
+  color: #000;
 }
 
 .document-actions {
